@@ -1,5 +1,11 @@
 libraries{
   sdp{
+      protractor {
+     url = "localhost:9000"
+     enforce = true
+     config_file = "protractor.conf.js"
+  }
+}
     images{
       registry = "http://0.0.0.0:5000" // registry url
       cred = "sdp-docker-registry"// jenkins cred id to authenticate
