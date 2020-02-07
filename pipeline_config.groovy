@@ -1,9 +1,5 @@
 libraries{
   sdp{
-    owasp_dep_check {
-    scan_target = "src"
-    cvss_threshold = "9"
-  }
     images{
       registry = "http://0.0.0.0:5000" // registry url
       cred = "sdp-docker-registry"// jenkins cred id to authenticate
@@ -13,6 +9,11 @@ libraries{
   github_enterprise
   sonarqube{
     enforce_quality_gate = true
+    
+  }
+  owasp_dep_check {
+    scan_target = "src"
+    cvss_threshold = "9"
   }
   docker{
     registry = "0.0.0.0:5000"
