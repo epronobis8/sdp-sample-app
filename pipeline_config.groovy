@@ -17,7 +17,7 @@ libraries{
     cred = "sdp-docker-registry"
   }
   owasp_dep_check {
-    scan_target = "0.0.0.0:5000"
+    scan_target = "/var/jenkins_home/workspace/sample-spring-boot-api_master/"
     cvss_threshold = "9"
   }
 }
