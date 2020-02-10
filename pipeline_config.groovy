@@ -2,6 +2,10 @@
 libraries{
   sdp{
     images{
+      owasp_dep_check {
+      scan_target = "https://github.com/epronobis8/sdp-sample-app"
+      cvss_threshold = "9"
+    }
       registry = "http://0.0.0.0:5000" // registry url
       cred = "sdp-docker-registry"// jenkins cred id to authenticate
       docker_args = "--network=try-it-out_sdp"  // docker runtime args
@@ -11,10 +15,6 @@ libraries{
   sonarqube{
     enforce_quality_gate = true
   }
-  owasp_dep_check {
-      scan_target = "https://github.com/epronobis8/sdp-sample-app"
-      cvss_threshold = "9"
-    }
   docker{
     registry = "0.0.0.0:5000"
     cred = "sdp-docker-registry"
