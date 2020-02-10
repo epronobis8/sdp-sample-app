@@ -17,7 +17,7 @@ libraries{
     cred = "sdp-docker-registry"
   }
   owasp_dep_check {
-    scan_target = "https://github.com/epronobis8/sdp-sample-app.git"
+    scan_target = "0.0.0.0:5000"
     cvss_threshold = "9"
   }
 }
