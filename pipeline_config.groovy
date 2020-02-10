@@ -12,7 +12,7 @@ libraries{
     
   }
   owasp_dep_check {
-    scan_target = "http://0.0.0.0:9000"
+    scan_target = "https://github.com/epronobis8/sdp-sample-app.git"
     cvss_threshold = "9"
   }
   docker{
