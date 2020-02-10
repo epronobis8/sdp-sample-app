@@ -1,3 +1,4 @@
+
 libraries{
   sdp{
     images{
@@ -11,12 +12,12 @@ libraries{
     enforce_quality_gate = true
     
   }
-  owasp_dep_check {
-    scan_target = "https://github.com/epronobis8/sdp-sample-app.git"
-    cvss_threshold = "9"
-  }
   docker{
     registry = "0.0.0.0:5000"
     cred = "sdp-docker-registry"
+  }
+  owasp_dep_check {
+    scan_target = "https://github.com/epronobis8/sdp-sample-app.git"
+    cvss_threshold = "9"
   }
 }
