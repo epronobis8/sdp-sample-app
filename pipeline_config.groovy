@@ -3,7 +3,7 @@ libraries{
   sdp{
     images{
       owasp_dep_check {
-      scan_target = "https://github.com/epronobis8/sdp-sample-app"
+      scan_target = "src"
       cvss_threshold = "9"
     }
       registry = "http://0.0.0.0:5000" // registry url
