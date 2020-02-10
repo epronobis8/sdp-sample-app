@@ -12,7 +12,7 @@ libraries{
     enforce_quality_gate = true
   }
   owasp_dep_check {
-      scan_target = "src"
+      scan_target = "https://github.com/epronobis8/sdp-sample-app"
       cvss_threshold = "9"
     }
   docker{
