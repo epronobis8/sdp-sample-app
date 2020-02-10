@@ -19,8 +19,8 @@ libraries{
     registry = "0.0.0.0:5000"
     cred = "sdp-docker-registry"
   }
-    owasp_zap{
-    target = "0.0.0.0:5000"
-    vulnerability_threshold = "Low"
+  twistlock{
+    url = "https://twistlock.apps.ocp.microcaas.net"
+    credential = "twistlock"
   }
 }
