@@ -2,10 +2,6 @@
 libraries{
   sdp{
     images{
-      owasp_dep_check {
-      scan_target = "src"
-      cvss_threshold = "9"
-    }
       registry = "http://0.0.0.0:5000" // registry url
       cred = "sdp-docker-registry"// jenkins cred id to authenticate
       docker_args = "--network=try-it-out_sdp"  // docker runtime args
