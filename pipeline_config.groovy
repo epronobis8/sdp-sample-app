@@ -12,7 +12,7 @@ libraries{
     
   }
   owasp_dep_check {
-    scan_target = "http://0.0.0.0:5000"
+    scan_target = "http://0.0.0.0:9000"
     cvss_threshold = "9"
   }
   docker{
