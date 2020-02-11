@@ -15,4 +15,8 @@ libraries{
     registry = "0.0.0.0:5000"
     cred = "sdp-docker-registry"
   }
+    owasp_dep_check {
+    scan_target = "src"
+    cvss_threshold = "9"
+  }
 }
