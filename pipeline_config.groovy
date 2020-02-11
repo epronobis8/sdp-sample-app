@@ -11,12 +11,12 @@ libraries{
   sonarqube{
     enforce_quality_gate = true
   }
+  owasp_dep_check {
+    scan_target = "0.0.0.0:5000"
+    cvss_threshold = "9"
+  }
   docker{
     registry = "0.0.0.0:5000"
     cred = "sdp-docker-registry"
-  }
-    owasp_dep_check {
-    scan_target = "0.0.0.0:5000"
-    cvss_threshold = "9"
   }
 }
