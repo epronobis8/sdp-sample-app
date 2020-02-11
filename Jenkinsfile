@@ -1,3 +1,3 @@
 static_code_analysis()
 build()
-scan_container_image()
+#scan_container_image()

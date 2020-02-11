@@ -15,8 +15,8 @@ libraries{
     registry = "0.0.0.0:5000"
     cred = "sdp-docker-registry"
   }
-  twistlock{
-    url = "https://twistlock.apps.ocp.microcaas.net"
-    credential = "twistlock"
+  #twistlock{
+    #url = "https://twistlock.apps.ocp.microcaas.net"
+    #credential = "twistlock"
   }
 }
