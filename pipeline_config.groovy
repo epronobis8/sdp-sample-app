@@ -2,9 +2,10 @@
 libraries{
   sdp{
     images{
-      registry = "http://0.0.0.0:5000" // registry url
-      cred = "sdp-docker-registry"// jenkins cred id to authenticate
-      docker_args = "--network=try-it-out_sdp"  // docker runtime args
+      registry = "https://docker.pkg.github.com"
+      repository = "boozallen/sdp-images"
+      cred = "github-token"
+      docker_args = "--network host"
     }
   }
   github_enterprise
@@ -12,7 +13,7 @@ libraries{
     enforce_quality_gate = true
   }
   owasp_dep_check {
-    scan_target = "https://github.com/epronobis8/sdp-sample-app"
+    scan_target = "src"
     cvss_threshold = "9"
   }
   docker{
