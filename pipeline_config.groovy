@@ -1,4 +1,3 @@
-
 libraries{
   sdp{
     images{
@@ -11,9 +10,10 @@ libraries{
   sonarqube{
     enforce_quality_gate = true
   }
-  owasp_dep_check {
-    scan_target = "src"
-    cvss_threshold = "9"
+  owasp_zap{
+    target = "https://example.com"
+    vulnerability_threshold = "Low"
+  }
   }
   docker{
     registry = "0.0.0.0:5000"
