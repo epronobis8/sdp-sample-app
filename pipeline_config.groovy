@@ -14,7 +14,6 @@ libraries{
     target = "https://example.com"
     vulnerability_threshold = "Low"
   }
-  }
   docker{
     registry = "0.0.0.0:5000"
     cred = "sdp-docker-registry"
