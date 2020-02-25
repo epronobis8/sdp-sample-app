@@ -6,6 +6,7 @@ libraries{
           cred = "github"
       }
     }
+    github_enterprise
   owasp_dep_check {
     scan_target = "src"
     cvss_threshold = "9"
