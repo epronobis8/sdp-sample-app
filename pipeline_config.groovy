@@ -6,11 +6,11 @@ libraries{
           cred = "github"
       }
     }
-    github_enterprise
-  owasp_dep_check {
-    scan_target = "src"
-    cvss_threshold = "9"
+libraries{
+  sonarqube{
+    credential_id = "sonarqube"
   }
+}
     owasp_zap{
         target = "https://example.com"
     }
