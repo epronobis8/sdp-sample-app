@@ -5,9 +5,9 @@ libraries{
           repository = "boozallen/sdp-images"
           cred = "github"
             }
-        sonarqube{
-    credential_id = "sonarqube"
-        }
     }
+      github_enterprise
+      sonarqube{
+    enforce_quality_gate = true
+  }
 }
-
