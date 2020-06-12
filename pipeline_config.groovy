@@ -9,7 +9,4 @@ libraries{
     credential_id = "sonarqube"
   }
 }
-    owasp_zap{
-        target = "https://example.com"
-    }
-}
+
