@@ -5,8 +5,6 @@ libraries{
           repository = "boozallen/sdp-images"
           cred = "github"
       }
-    }
-libraries{
   sonarqube{
     credential_id = "sonarqube"
   }
