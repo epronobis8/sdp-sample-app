@@ -7,6 +7,7 @@ libraries{
             }
         sonarqube{
     credential_id = "sonarqube"
-     }
+        }
+    }
 }
 
