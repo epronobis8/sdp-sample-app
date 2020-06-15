@@ -6,8 +6,8 @@ libraries{
           cred = "github"
             }
     }
-      github_enterprise
       sonarqube{
-    enforce_quality_gate = true
+        credential_id = "sonarqube"
+        enforce_quality_gate = true
   }
 }
