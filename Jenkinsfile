@@ -1,8 +1,7 @@
 node {
   stage('SCM') {
     git credentialsId: 'epronobis8', url: 'https://github.com/epronobis8/Music-sample-app-CICD'
-  }
-  
+  } 
   stage('depdenency check') {
     dependencyCheck additionalArguments: '', odcInstallation: 'owasp-check'
   }
@@ -15,6 +14,13 @@ node {
       sh "${scannerHome}/bin/sonar-scanner \
            -Dsonar.projectKey=sdp-sample-app \
            -Dsonar.sources=. "
+    }
+    
+  stage('Build') {
+            steps {
+                sh 'make' 
+                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
+            }
     }
   }
 }
